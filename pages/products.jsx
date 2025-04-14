@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Header from '../components/Header';
+// import Header from '../components/Header';
 import ProductCard from '../components/ProductCard';
 import { Sliders as Slider, ChevronDown } from 'lucide-react';
 
@@ -28,7 +28,7 @@ export default function Products() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
+      {/* <Header /> */}
       
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row gap-8">

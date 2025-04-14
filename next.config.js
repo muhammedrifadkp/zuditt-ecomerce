@@ -1,21 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Keep this if you want static export
+  output: 'export',
   eslint: {
-    ignoreDuringBuilds: true, // Good for CI/CD
+    ignoreDuringBuilds: true,
   },
-  images: {
-    unoptimized: true, // Required for static exports
-    domains: ['your-image-cdn.com'], // Add your image host domains
+  images: { 
+    unoptimized: true 
   },
-  // Add these for better static export support
-  trailingSlash: true, // Helps with static file routing
-  distDir: 'out', // Custom build output folder
-  // Enable if using internationalization
-  i18n: {
-    locales: ['en'],
-    defaultLocale: 'en',
-  },
+  // Remove the i18n block completely
 };
 
 module.exports = nextConfig;
